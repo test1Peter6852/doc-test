@@ -1,0 +1,17 @@
+backend:
+  name: github
+  repo: https://github.com/test1Peter6852/doc-test
+  branch: main
+
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "docs"
+    label: "Docs"
+    folder: "docs"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
